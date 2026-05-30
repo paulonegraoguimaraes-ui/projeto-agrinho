@@ -1,319 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agro Paraná — O Campo que Alimenta o Brasil</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,800;1,9..144,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Paraná — A Força do Campo Paranaense</title>
+    <meta name="description" content="Conheça o agronegócio paranaense: história, dados, culturas e sua importância para a economia do Brasil.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===================== NAVBAR ===================== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-icon">🌿</span>
-        <span class="logo-text">Agro<strong>Paraná</strong></span>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#dados">Dados</a></li>
-        <li><a href="#culturas">Culturas</a></li>
-        <li><a href="#economia">Economia</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🌾</span>
+                <span>Agro<strong>Paraná</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#culturas">Culturas</a></li>
+                <li><a href="#economia">Economia</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-shape shape-1"></div>
-      <div class="hero-shape shape-2"></div>
-      <div class="hero-shape shape-3"></div>
-      <div class="hero-grain"></div>
-    </div>
-    <div class="hero-content container">
-      <div class="hero-badge">🌾 Estado do Paraná · Sul do Brasil</div>
-      <h1 class="hero-title">
-        O Campo que<br><em>Alimenta</em> o Brasil
-      </h1>
-      <p class="hero-subtitle">
-        O Paraná é um dos pilares do agronegócio brasileiro — uma terra de
-        produtividade, inovação e tradição que transforma solo fértil em
-        riqueza nacional.
-      </p>
-      <div class="hero-cta">
-        <a href="#sobre" class="btn-primary">Explorar</a>
-        <a href="#dados" class="btn-secondary">Ver Dados</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Role para baixo</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ===================== SOBRE ===================== -->
-  <section class="section sobre" id="sobre">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Sobre o Agro</span>
-        <h2>Uma história construída<br>no <em>solo paranaense</em></h2>
-      </div>
-      <div class="sobre-grid">
-        <div class="sobre-text reveal">
-          <p>
-            O agronegócio paranaense tem raízes profundas na colonização do estado,
-            que ao longo do século XX foi transformando sua densa vegetação em campos
-            altamente produtivos. Imigrantes europeus, japoneses e migrantes de outros
-            estados foram os protagonistas desse processo de ocupação e cultivo.
-          </p>
-          <p>
-            Hoje, o Paraná é reconhecido como um dos estados mais eficientes e
-            tecnológicos no campo, combinando tradição familiar com modernidade.
-            É o <strong>segundo maior produtor agrícola do Brasil</strong>, responsável
-            por uma fatia expressiva das exportações nacionais de grãos, carnes e
-            derivados.
-          </p>
-          <p>
-            O campo paranaense não é apenas produção — é identidade. A terra moldou
-            a cultura, a gastronomia, as festas e o orgulho de quem nasceu e
-            cresceu nesse estado.
-          </p>
+    <!-- ═══ HERO ═══ -->
+    <section id="hero" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
         </div>
-        <div class="sobre-cards">
-          <div class="info-card reveal">
-            <div class="info-card-icon">🏆</div>
-            <h3>2º Maior Produtor</h3>
-            <p>O Paraná é o segundo maior estado produtor agrícola do Brasil, atrás apenas de Mato Grosso.</p>
-          </div>
-          <div class="info-card reveal">
-            <div class="info-card-icon">🚜</div>
-            <h3>Tecnologia no Campo</h3>
-            <p>Alta adoção de práticas modernas como plantio direto, agricultura de precisão e biotecnologia.</p>
-          </div>
-          <div class="info-card reveal">
-            <div class="info-card-icon">🌍</div>
-            <h3>Exportador Global</h3>
-            <p>Produtos paranaenses chegam a mais de 100 países, com destaque para soja, carnes e derivados.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== DADOS ===================== -->
-  <section class="section dados" id="dados">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag light">Em Números</span>
-        <h2>O peso do agro<br>paranaense</h2>
-      </div>
-
-      <div class="stats-grid">
-        <div class="stat-card reveal">
-          <div class="stat-number" data-target="42" data-suffix="M+">0</div>
-          <div class="stat-unit">toneladas/ano</div>
-          <div class="stat-label">de grãos produzidos</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-number" data-target="33" data-suffix="%">0</div>
-          <div class="stat-unit">da produção nacional</div>
-          <div class="stat-label">de grãos que partem do PR</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-number" data-target="350" data-suffix="mil+">0</div>
-          <div class="stat-unit">empregos diretos</div>
-          <div class="stat-label">no setor agrícola estadual</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-number" data-target="15" data-suffix="bi USD">0</div>
-          <div class="stat-unit">em exportações/ano</div>
-          <div class="stat-label">de produtos agropecuários</div>
-        </div>
-      </div>
-
-      <div class="barras-section reveal">
-        <h3>Produção por Cultura — Principais Grãos (estimativa 2023)</h3>
-        <div class="barra-item">
-          <span class="barra-label">Soja</span>
-          <div class="barra-track">
-            <div class="barra-fill" data-width="90" style="--bar-color: #43A047;"></div>
-          </div>
-          <span class="barra-value">~20,5 mi t</span>
-        </div>
-        <div class="barra-item">
-          <span class="barra-label">Milho</span>
-          <div class="barra-track">
-            <div class="barra-fill" data-width="72" style="--bar-color: #F9A825;"></div>
-          </div>
-          <span class="barra-value">~15,2 mi t</span>
-        </div>
-        <div class="barra-item">
-          <span class="barra-label">Trigo</span>
-          <div class="barra-track">
-            <div class="barra-fill" data-width="48" style="--bar-color: #D4A017;"></div>
-          </div>
-          <span class="barra-value">~3,8 mi t</span>
-        </div>
-        <div class="barra-item">
-          <span class="barra-label">Cana-de-açúcar</span>
-          <div class="barra-track">
-            <div class="barra-fill" data-width="36" style="--bar-color: #42A5F5;"></div>
-          </div>
-          <span class="barra-value">~43 mi t</span>
-        </div>
-        <div class="barra-item">
-          <span class="barra-label">Feijão</span>
-          <div class="barra-track">
-            <div class="barra-fill" data-width="24" style="--bar-color: #8D6E63;"></div>
-          </div>
-          <span class="barra-value">~750 mil t</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CULTURAS ===================== -->
-  <section class="section culturas" id="culturas">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Principais Culturas</span>
-        <h2>O que o Paraná<br><em>produz para o mundo</em></h2>
-      </div>
-      <div class="culturas-grid">
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">🫘</div>
-          <h3>Soja</h3>
-          <p>Principal cultura do estado, o Paraná é um dos maiores produtores mundiais de soja, com alta tecnologia e produtividade.</p>
-          <div class="cultura-tag">Grão · Exportação</div>
-        </div>
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">🌽</div>
-          <h3>Milho</h3>
-          <p>Segunda maior cultura, fundamental para a cadeia de proteína animal e a produção de etanol e derivados industriais.</p>
-          <div class="cultura-tag">Grão · Pecuária</div>
-        </div>
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">🌾</div>
-          <h3>Trigo</h3>
-          <p>O Paraná é o maior produtor de trigo do Brasil, abastecendo moinhos e indústrias alimentícias de todo o país.</p>
-          <div class="cultura-tag">Grão · Indústria</div>
-        </div>
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">🎋</div>
-          <h3>Cana-de-Açúcar</h3>
-          <p>Cultivada principalmente no norte do estado, é base para açúcar e biocombustível com papel estratégico na matriz energética.</p>
-          <div class="cultura-tag">Energia · Açúcar</div>
-        </div>
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">☕</div>
-          <h3>Café</h3>
-          <p>Com tradição histórica no norte paranaense, o café ainda hoje é cultivado com qualidade reconhecida nacional e internacionalmente.</p>
-          <div class="cultura-tag">Bebida · Tradição</div>
-        </div>
-
-        <div class="cultura-card reveal">
-          <div class="cultura-emoji">🫘</div>
-          <h3>Feijão</h3>
-          <p>Alimento base da cultura brasileira, o Paraná figura entre os principais estados produtores, garantindo segurança alimentar.</p>
-          <div class="cultura-tag">Alimento · Segurança</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ECONOMIA & IDENTIDADE ===================== -->
-  <section class="section economia" id="economia">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Economia &amp; Identidade</span>
-        <h2>Mais que produção —<br><em>uma identidade paranaense</em></h2>
-      </div>
-      <div class="economia-content">
-        <div class="economia-texto reveal">
-          <p>
-            O agronegócio moldou a alma do Paraná. Das festas da colheita às feiras
-            agropecuárias, passando pela culinária típica e pela arquitetura das pequenas
-            cidades interioranas — o campo está presente em cada aspecto da vida paranaense.
-          </p>
-          <p>
-            Economicamente, o setor é motor de desenvolvimento: movimenta cooperativas,
-            frigoríficos, tradings, transportadoras e toda uma cadeia de serviços que sustenta
-            cidades inteiras. Municípios como Cascavel, Maringá, Londrina e Pato Branco devem
-            parte significativa de seu dinamismo à base agrícola regional.
-          </p>
-          <p>
-            O Paraná é pioneiro em práticas sustentáveis, tendo sido precursor do
-            <strong>plantio direto no Brasil</strong> — uma revolução agrícola que reduziu a
-            erosão do solo e aumentou a produtividade de forma responsável, e hoje é modelo
-            adotado no mundo inteiro.
-          </p>
-        </div>
-        <div class="economia-destaques reveal">
-          <div class="destaque-item">
-            <div class="destaque-icon">🌱</div>
-            <div class="destaque-info">
-              <h4>Plantio Direto</h4>
-              <p>O PR foi pioneiro nesta técnica sustentável, adotada hoje no mundo inteiro</p>
+        <div class="hero-body">
+            <span class="hero-eyebrow">🌿 Agronegócio do Sul do Brasil</span>
+            <h1 class="hero-title">
+                <span>O Paraná</span>
+                <span class="hero-title-accent">que alimenta</span>
+                <span>o Brasil</span>
+            </h1>
+            <p class="hero-sub">
+                Da terra fértil dos campos e planaltos às mesas de todo o país —
+                conheça o agronegócio que faz do Paraná uma das maiores potências agrícolas do Brasil.
+            </p>
+            <div class="hero-actions">
+                <a href="#sobre" class="btn btn-green">Explorar</a>
+                <a href="#dados" class="btn btn-outline">Ver Dados</a>
             </div>
-          </div>
-          <div class="destaque-item">
-            <div class="destaque-icon">🤝</div>
-            <div class="destaque-info">
-              <h4>Sistema Cooperativista</h4>
-              <p>Um dos mais sólidos do país, com cooperativas fortes em todas as regiões</p>
-            </div>
-          </div>
-          <div class="destaque-item">
-            <div class="destaque-icon">📊</div>
-            <div class="destaque-info">
-              <h4>Balança Comercial</h4>
-              <p>O agro é responsável pela maior parte das exportações do estado</p>
-            </div>
-          </div>
-          <div class="destaque-item">
-            <div class="destaque-icon">🎓</div>
-            <div class="destaque-info">
-              <h4>Inovação e Pesquisa</h4>
-              <p>IAPAR, EMBRAPA e universidades federais impulsionam a ciência agrícola local</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="hero-kpis">
+            <div class="hero-kpi">
+                <b>2°</b>
+                <span>em soja no Brasil</span>
+            </div>
+            <div class="hero-kpi">
+                <b>1°</b>
+                <span>em trigo no Brasil</span>
+            </div>
+            <div class="hero-kpi">
+                <b>25%</b>
+                <span>do PIB é agro</span>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-logo">
-        <span class="logo-icon">🌿</span>
-        <span class="logo-text">Agro<strong>Paraná</strong></span>
-      </div>
-      <p class="footer-desc">
-        Um projeto informativo sobre o agronegócio paranaense —<br>
-        sua história, força e futuro.
-      </p>
-      <div class="footer-divider"></div>
-      <p class="footer-copy">
-        © 2024 Agro Paraná &nbsp;·&nbsp; Dados baseados em SEAB-PR, IBGE e CONAB
-      </p>
-    </div>
-  </footer>
+    <!-- ═══ SOBRE ═══ -->
+    <section id="sobre" class="section bg-offwhite">
+        <div class="container">
+            <header class="section-header fade-up">
+                <span class="tag">Sobre</span>
+                <h2>O Agro no Paraná</h2>
+                <p>Uma história de transformação, resiliência e produção que moldou o estado e o Brasil.</p>
+            </header>
+            <div class="cards-3">
+                <article class="card fade-up" style="--i:0">
+                    <span class="card-icon">📜</span>
+                    <h3>História</h3>
+                    <p>O café dominou o norte do Paraná por décadas até a Grande Geada de 1975, que destruiu boa parte dos cafezais e impulsionou a diversificação para soja, milho e trigo — transformando o estado num mosaico agrícola único.</p>
+                </article>
+                <article class="card fade-up" style="--i:1">
+                    <span class="card-icon">🗺️</span>
+                    <h3>Diversidade Regional</h3>
+                    <p>Do norte quente, com cana-de-açúcar e café, ao sul frio, com trigo e soja. O Paraná é moldado pela sua geografia diversa: planaltos, campos, bacias hidrográficas e solos férteis de origem basáltica.</p>
+                </article>
+                <article class="card fade-up" style="--i:2">
+                    <span class="card-icon">🚜</span>
+                    <h3>Modernização</h3>
+                    <p>Hoje o estado é referência em tecnologia rural. Agricultura de precisão, cooperativismo forte e pesquisa de ponta — como a Embrapa Soja — fazem do Paraná um modelo de agronegócio eficiente e inovador.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- ═══ DADOS ═══ -->
+    <section id="dados" class="section dados-section">
+        <div class="dados-glow" aria-hidden="true"></div>
+        <div class="container">
+            <header class="section-header section-header--light fade-up">
+                <span class="tag tag--light">Números</span>
+                <h2>Paraná em Dados</h2>
+                <p>A força do campo paranaense em números que impressionam o Brasil e o mundo.</p>
+            </header>
+            <div class="stats-grid">
+                <div class="stat-card fade-up" style="--i:0">
+                    <span class="stat-emoji">🌱</span>
+                    <div class="stat-num">7,5 mi</div>
+                    <div class="stat-name">hectares cultivados</div>
+                    <div class="stat-detail">de área agrícola produtiva</div>
+                </div>
+                <div class="stat-card fade-up" style="--i:1">
+                    <span class="stat-emoji">💰</span>
+                    <div class="stat-num" data-target="120" data-prefix="R$ " data-suffix=" bi">R$ 0 bi</div>
+                    <div class="stat-name">em Valor Bruto de Produção</div>
+                    <div class="stat-detail">gerado anualmente pelo agro</div>
+                </div>
+                <div class="stat-card fade-up" style="--i:2">
+                    <span class="stat-emoji">🏡</span>
+                    <div class="stat-num" data-target="340" data-suffix=" mil">0 mil</div>
+                    <div class="stat-name">propriedades rurais</div>
+                    <div class="stat-detail">espalhadas por todo o estado</div>
+                </div>
+                <div class="stat-card fade-up" style="--i:3">
+                    <span class="stat-emoji">📊</span>
+                    <div class="stat-num" data-target="25" data-suffix="%">0%</div>
+                    <div class="stat-name">do PIB paranaense</div>
+                    <div class="stat-detail">movimentado pelo agronegócio</div>
+                </div>
+            </div>
+            <div class="rankings fade-up">
+                <div class="rank-pill"><span class="rank-badge">🥇 1º</span><span>Produtor de Trigo do Brasil</span></div>
+                <div class="rank-pill"><span class="rank-badge">🥈 2º</span><span>Produtor de Soja do Brasil</span></div>
+                <div class="rank-pill"><span class="rank-badge">🥈 2º</span><span>Produtor de Milho do Brasil</span></div>
+                <div class="rank-pill"><span class="rank-badge">🏆</span><span>Top 3 em aves e suínos</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CULTURAS ═══ -->
+    <section id="culturas" class="section">
+        <div class="container">
+            <header class="section-header fade-up">
+                <span class="tag">Culturas</span>
+                <h2>Principais Cultivos</h2>
+                <p>As culturas que definem o calendário agrícola e a vocação produtiva do Paraná.</p>
+            </header>
+            <div class="cultura-grid">
+                <article class="cultura-card fade-up" style="--i:0">
+                    <div class="cultura-top"><span class="cultura-icon">🌿</span><h3>Soja</h3></div>
+                    <p>Principal cultura do estado, com produção que supera 20 milhões de toneladas. O Paraná é o 2º maior produtor do Brasil, com forte participação nas exportações nacionais.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:92%"></div></div>
+                    <span class="progress-label">Relevância no estado: muito alta</span>
+                </article>
+                <article class="cultura-card fade-up" style="--i:1">
+                    <div class="cultura-top"><span class="cultura-icon">🌽</span><h3>Milho</h3></div>
+                    <p>2º maior produtor nacional. O milho paranaense abastece a agroindústria, a produção de ração animal e os mercados interno e externo com consistência.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:85%"></div></div>
+                    <span class="progress-label">Relevância no estado: muito alta</span>
+                </article>
+                <article class="cultura-card fade-up" style="--i:2">
+                    <div class="cultura-top"><span class="cultura-icon">🌾</span><h3>Trigo</h3></div>
+                    <p>O Paraná é o maior produtor de trigo do Brasil, responsável por mais de 50% da produção nacional, concentrado nas regiões sul e centro-sul do estado.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:80%"></div></div>
+                    <span class="progress-label">Relevância no estado: muito alta</span>
+                </article>
+                <article class="cultura-card fade-up" style="--i:3">
+                    <div class="cultura-top"><span class="cultura-icon">🎋</span><h3>Cana-de-açúcar</h3></div>
+                    <p>Forte no norte e noroeste do estado. A cana alimenta usinas de açúcar e etanol, importantes para a matriz energética e para a economia regional paranaense.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:62%"></div></div>
+                    <span class="progress-label">Relevância no estado: alta</span>
+                </article>
+                <article class="cultura-card fade-up" style="--i:4">
+                    <div class="cultura-top"><span class="cultura-icon">🍠</span><h3>Mandioca</h3></div>
+                    <p>Cultura tradicional e de grande importância social. O Paraná é referência em produção de mandioca para consumo humano e para a indústria de fécula e amido.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:55%"></div></div>
+                    <span class="progress-label">Relevância no estado: média-alta</span>
+                </article>
+                <article class="cultura-card fade-up" style="--i:5">
+                    <div class="cultura-top"><span class="cultura-icon">☕</span><h3>Café</h3></div>
+                    <p>Símbolo histórico do norte paranaense, o café permanece relevante e evolui com variedades mais resistentes e produção voltada ao mercado premium nacional e de exportação.</p>
+                    <div class="progress-wrap"><div class="progress-bar" style="--pct:45%"></div></div>
+                    <span class="progress-label">Relevância no estado: média</span>
+                </article>
+            </div>
+            <div class="pecuaria-banner fade-up">
+                <div class="pecuaria-icon">🐔</div>
+                <div class="pecuaria-text">
+                    <h3>Pecuária e Avicultura</h3>
+                    <p>O Paraná é um dos maiores produtores de frango e suínos do Brasil. O oeste do estado concentra a maior parte da produção, com cooperativas e agroindústrias como C.Vale, Aurora e Frangosul de reconhecimento internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ECONOMIA ═══ -->
+    <section id="economia" class="section bg-offwhite">
+        <div class="container">
+            <header class="section-header fade-up">
+                <span class="tag">Identidade</span>
+                <h2>Agro e a Alma Paranaense</h2>
+                <p>O campo não é só produção — é cultura, história e a espinha dorsal da identidade do estado.</p>
+            </header>
+            <div class="eco-grid">
+                <div class="eco-text fade-up" style="--i:0">
+                    <h3>Motor da Economia</h3>
+                    <p>O agronegócio é a espinha dorsal da economia paranaense. Além de representar cerca de 25% do PIB estadual, o setor gera empregos diretos e indiretos para milhões de paranaenses — do campo às cidades do interior.</p>
+                    <p>As cooperativas agropecuárias têm papel central nessa história: o Paraná possui um dos maiores sistemas cooperativistas do Brasil, com cooperativas como Coamo, C.Vale, Cocamar e Bom Jesus movendo bilhões em faturamento anual.</p>
+                    <div class="eco-highlight">
+                        <span>🤝</span>
+                        <p>O cooperativismo paranaense é referência nacional, com mais de <strong>400 cooperativas agropecuárias</strong> atuando em todo o estado.</p>
+                    </div>
+                </div>
+                <div class="eco-cards fade-up" style="--i:1">
+                    <div class="eco-card eco-card--green">
+                        <span class="eco-card-icon">🏙️</span>
+                        <h4>Cidades do Agro</h4>
+                        <p>Londrina, Maringá, Cascavel e Campo Mourão cresceram impulsionadas pelo agronegócio e são hoje polos regionais de serviços e comércio.</p>
+                    </div>
+                    <div class="eco-card eco-card--blue">
+                        <span class="eco-card-icon">🔬</span>
+                        <h4>Pesquisa e Inovação</h4>
+                        <p>A Embrapa Soja, em Londrina, é um dos centros de pesquisa agrícola mais importantes do mundo, desenvolvendo variedades que abastecem o Brasil.</p>
+                    </div>
+                    <div class="eco-card eco-card--teal">
+                        <span class="eco-card-icon">🌎</span>
+                        <h4>Exportações Globais</h4>
+                        <p>Soja, milho, carne e açúcar paranaenses chegam à Europa, Ásia e América do Norte, colocando o estado no mapa global do agronegócio.</p>
+                    </div>
+                    <div class="eco-card eco-card--lime">
+                        <span class="eco-card-icon">🌿</span>
+                        <h4>Sustentabilidade</h4>
+                        <p>O plantio direto, pioneiro no Paraná nos anos 1970, tornou-se referência mundial de agricultura conservacionista e preservação do solo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#hero" class="nav-logo footer-logo">
+                    <span class="logo-icon">🌾</span>
+                    <span>Agro<strong>Paraná</strong></span>
+                </a>
+                <p>Um panorama informativo sobre o agronegócio no estado do Paraná — sua história, seus números e sua importância para o Brasil.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 AgroParaná · Conteúdo informativo e educativo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
